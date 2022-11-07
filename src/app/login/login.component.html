@@ -1,0 +1,23 @@
+<div class="login-container">
+    <img  class="film" src="assets/images/film.png" alt="image descriptive de contenu d'application FilmTV" >
+    <div class="logo">Film TV</div>
+
+    <div class="desc">If you struggle with movie,TV shows and more, then Film TV might be your best all-in-one solution for recommendations.
+        As landing online aggregator of movie and TV show reviews for crities. We provide fans with a comprehensive quide to what's Fresh - and what's Rotten - in theaters and at home. 
+        If you're an entertainment fan looking for a recommendation. Or to share an opinion. You've come to the right place. 
+    </div>
+    <div class="login-form">
+        <div class="form-group">
+            <label for="uname">Username</label>
+            <input type="text" name="uname"  class="form-control"placeholder="Enter your User Name" [(ngModel)]="username">
+        </div>
+        <div class="form-group">
+            <label for="pword">PassWord</label>
+            <input type="password" name="pword"  class="form-control"placeholder="Enter your PassWord" [(ngModel)]="password">
+        </div>
+        <div class="btn-container">
+            <div class="error">{{errorMessage}}</div>
+            <button class="btn btn-dark" (click)="login()">Login</button>
+        </div>
+    </div>
+</div>
